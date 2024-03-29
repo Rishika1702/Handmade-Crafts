@@ -23,10 +23,7 @@ export default function navbar() {
   return (
     <MDBNavbar expand='lg' light bgColor='light'>
       <MDBContainer fluid>
-        <MDBNavbarBrand href='#'>
-          <img src="" 
-          alt="" />
-        </MDBNavbarBrand>
+        <MDBNavbarBrand href='#'>Brand</MDBNavbarBrand>
 
         <MDBNavbarToggler
           aria-controls='navbarSupportedContent'
