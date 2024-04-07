@@ -17,11 +17,11 @@ import {
   MDBCollapse,
 } from 'mdb-react-ui-kit';
 
-export default function navbar() {
+export default function Navbar() {
   const [openBasic, setOpenBasic] = useState(false);
 
   return (
-    <MDBNavbar expand='lg' light bgColor='light'>
+    <MDBNavbar expand='lg' light bgColor='light'fixed>
       <MDBContainer fluid>
         <MDBNavbarBrand href='#'>Brand</MDBNavbarBrand>
 

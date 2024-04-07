@@ -24,7 +24,20 @@ const Signup = () => {
     onSubmit: (values) => {
       console.log(values);
       // send data to backend
+
+      
+
+    //sending request to client
+      fetch('http://localhost:5000/user/add'),{
+        method:'POST',
+        body:JSON.stringify(values),
+        headers:{
+          'Content-Type' :'application/json'
+        }
+      }
     },
+
+   
     validationSchema: SignupValidationSchema
   });
 
@@ -103,7 +116,7 @@ const Signup = () => {
                         <label for="" className="form-label">Confirm Password</label>
                         <input
                           type="password"
-                          id="password"
+                          id="confirmPassword"
                           onChange={signupForm.handleChange}
                           value={signupForm.values.confirmPassword}
                           className="form-control"
