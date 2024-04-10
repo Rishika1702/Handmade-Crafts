@@ -1,13 +1,9 @@
 import React from 'react'
-import Navbar from './navbar';
 
-const MainLayout = ({ children }) => {
+const Layout = ({ children }) => {
     return (
-        <>
-            <Navbar />
-            {children}
-        </>
+        <div>{children}</div>
     )
 }
 
-export default MainLayout;
+export default Layout

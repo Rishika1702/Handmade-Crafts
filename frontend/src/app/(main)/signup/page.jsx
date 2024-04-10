@@ -3,6 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import toast from 'react-hot-toast';
 
 
 const Signup = () => {
@@ -25,19 +26,31 @@ const Signup = () => {
       console.log(values);
       // send data to backend
 
-      
 
-    //sending request to client
-      fetch('http://localhost:5000/user/add'),{
-        method:'POST',
-        body:JSON.stringify(values),
-        headers:{
-          'Content-Type' :'application/json'
+
+      //sending request to client
+      fetch('http://localhost:5000/user/add', {
+        method: 'POST',
+        body: JSON.stringify(values),
+        headers: {
+          'Content-Type': 'application/json'
         }
-      }
+      })
+        .then((response) => {
+          console.log(response.status);
+          if (response.status === 200) {
+            toast.success('user registered successfully')
+          }
+          else {
+            toast.error('user registration failed')
+          }
+        }).catch((err) => {
+          console.log(err);
+          toast.error('user registration failed')
+        })
     },
 
-   
+
     validationSchema: SignupValidationSchema
   });
 

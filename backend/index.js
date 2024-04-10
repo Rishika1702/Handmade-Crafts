@@ -6,12 +6,16 @@ const cors=require('cors');
 const app = express();
 
 const userRouter = require('./routers/userRouter');
+const productRouter = require('./routers/productRouter');
+
 
 // middleware
 app.use(cors({
     origin:['http://localhost:3000']
 }))
-app.use('/post', userRouter);
+app.use(express.json());
+app.use('/user', userRouter);
+app.use('/product',productRouter);
 
 const port = 5000;
 
