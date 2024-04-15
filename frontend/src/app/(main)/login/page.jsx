@@ -33,15 +33,14 @@ const Login = () => {
           <div className="container">
             <div className="row gx-lg-5 align-items-center">
               <div className="col-lg-6 mb-5 mb-lg-0">
-                <h1 className="my-5 display-3 fw-bold ls-tight">
-                  Welcome
-                  <span className="text-primary"> Back</span>
+              <h1 className=" text-primary display-3 fw-bold ls-tight">
+                  Welcome Back to
                 </h1>
+                <h2 className="fw-bold ls-tight text-black">
+                  Mishrit : The Knitting Haven
+                </h2>
                 <p style={{ color: "hsl(217, 10%, 50.8%)" }}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-                  itaque accusantium odio, soluta, corrupti aliquam quibusdam
-                  tempora at cupiditate quis eum maiores libero veritatis? Dicta
-                  facilis sint aliquid ipsum atque?
+                Log in to your account to continue exploring our curated collection of handmade knitted treasures and to stay connected with our vibrant community of artisans and enthusiasts.
                 </p>
               </div>
               <div className="col-lg-5 col-md-6 mb-5 mb-lg-0 mx-auto">

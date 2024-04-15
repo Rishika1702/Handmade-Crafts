@@ -55,7 +55,7 @@ const Signup = () => {
   });
 
   return (
-    <div className='bg-primary-subtle d-flex align-items-center'>
+    <div className='bg-info-subtle d-flex align-items-center'>
       <section className="container">
         <div
           className="px-4 py-5 px-md-5 text-center text-lg-start"
@@ -63,15 +63,14 @@ const Signup = () => {
           <div className="container">
             <div className="row gx-lg-5 align-items-center">
               <div className="col-lg-6 mb-5 mb-lg-0">
-                <h1 className="my-5 display-3 fw-bold ls-tight">
+                <h1 className=" text-primary display-3 fw-bold ls-tight">
                   Welcome to
-                  <span className="text-primary">  our Website</span>
                 </h1>
+                <h2 className="fw-bold ls-tight text-black">
+                  Mishrit : The Knitting Haven
+                </h2>
                 <p style={{ color: "hsl(217, 10%, 50.8%)" }}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-                  itaque accusantium odio, soluta, corrupti aliquam quibusdam
-                  tempora at cupiditate quis eum maiores libero veritatis? Dicta
-                  facilis sint aliquid ipsum atque?
+                Join our vibrant community of handicraft enthusiasts and unlock a world of creativity, warmth, and handmade treasures. Sign up now to explore our curated collection of artisanal knitted goods and embark on your journey of discovering unique, handcrafted pieces!
                 </p>
               </div>
               <div className="col-lg-5 col-md-6 mb-5 mb-lg-0 mx-auto">
@@ -161,7 +160,7 @@ const Signup = () => {
                         type="submit"
                         className="btn btn-primary w-100 mb-4"
                       >
-                        Login Now
+                        Signup Now
                       </button>
                       <div className="text-center">
                         <p>Already Registered</p>

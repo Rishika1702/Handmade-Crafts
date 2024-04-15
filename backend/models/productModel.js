@@ -1,9 +1,13 @@
-const {model, Schema} = require('../connection');
+const { model, Schema } = require('../connection');
 
 const mySchema = new Schema({
-    productName : {type : String, require: true},
-    price:{type: Number},
-    image:{type: Image },
+    name: { type: String, require: true },
+    category: String,
+    material: String,
+    price: { type: Number },
+    image: { type: String },
+    description: String,
+    createdAt: { type: Date, default: Date.now }
 });
 
 module.exports = model('product', mySchema);
