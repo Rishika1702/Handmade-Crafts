@@ -4,6 +4,7 @@ import { MDBCarousel, MDBCarouselItem, MDBCarouselCaption } from 'mdb-react-ui-k
 import Navbar from './navbar';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 
+
 const page = () => {
   const [showBasic, setShowBasic] = useState(false);
   return (
@@ -50,7 +51,7 @@ const page = () => {
       </div>
       
       {/* footer */}
-      <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
+      <MDBFooter bgColor='info-subtle' className='text-center text-lg-start text-muted'>
       <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
         <div className='me-5 d-none d-lg-block'>
           <span>Get connected with us on social networks:</span>
@@ -84,34 +85,33 @@ const page = () => {
             <MDBCol md='3' lg='4' xl='3' className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>
                 <MDBIcon color='secondary' icon='gem' className='me-3' />
-                Company name
+                Mishrit
               </h6>
               <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit
-                amet, consectetur adipisicing elit.
+              Mishrit celebrates the art of handmade knitting, offering a curated collection of artisanal knitted goods. More than just a marketplace, Mishrit is a community where enthusiasts and artisans come together to share their love for knitting. Discover unique, handcrafted treasures and join us in celebrating the beauty of handmade craftsmanship.
               </p>
             </MDBCol>
 
             <MDBCol md='2' lg='2' xl='2' className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
+              <h6 className='text-uppercase fw-bold mb-4'>Our Products</h6>
               <p>
                 <a href='#!' className='text-reset'>
-                  Angular
+                  Clothings
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  React
+                  Accessories
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  Vue
+                  House Decoration
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  Laravel
+                  Gift Hampers
                 </a>
               </p>
             </MDBCol>
@@ -120,7 +120,7 @@ const page = () => {
               <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
               <p>
                 <a href='#!' className='text-reset'>
-                  Pricing
+                  Join us
                 </a>
               </p>
               <p>
@@ -144,17 +144,17 @@ const page = () => {
               <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
               <p>
                 <MDBIcon color='secondary' icon='home' className='me-2' />
-                New York, NY 10012, US
+                Lucknow,Uttar Pradesh,India
               </p>
               <p>
                 <MDBIcon color='secondary' icon='envelope' className='me-3' />
-                info@example.com
+                helpsupport@mishrit.in
               </p>
               <p>
-                <MDBIcon color='secondary' icon='phone' className='me-3' /> + 01 234 567 88
+                <MDBIcon color='secondary' icon='phone' className='me-3' /> + 91 12345 67890
               </p>
               <p>
-                <MDBIcon color='secondary' icon='print' className='me-3' /> + 01 234 567 89
+                <MDBIcon color='secondary' icon='print' className='me-3' /> +91 09876 54321
               </p>
             </MDBCol>
           </MDBRow>
@@ -162,9 +162,9 @@ const page = () => {
       </section>
       
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        © 2021 Copyright:
-        <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-          MDBootstrap.com
+        © 2024 Copyright:
+        <a className='text-reset fw-bold' href='https://google.com/'>
+           mishrit.com
         </a>
       </div>
     </MDBFooter>

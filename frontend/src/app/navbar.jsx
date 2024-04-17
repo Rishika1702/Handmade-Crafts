@@ -21,9 +21,14 @@ export default function Navbar() {
   const [openBasic, setOpenBasic] = useState(false);
 
   return (
-    <MDBNavbar expand='lg' light bgColor='light'fixed>
+    <MDBNavbar className='text-white' expand='lg' light bgColor='primary' >
       <MDBContainer fluid>
-        <MDBNavbarBrand href='#'>Brand</MDBNavbarBrand>
+        <MDBNavbarBrand href='#'>
+          <img src="Logo-2.png" 
+          height='30'
+          margin='0 px'
+          padding='0'
+          alt="Mishrit" /></MDBNavbarBrand>
 
         <MDBNavbarToggler
           aria-controls='navbarSupportedContent'
@@ -35,7 +40,7 @@ export default function Navbar() {
         </MDBNavbarToggler>
 
         <MDBCollapse navbar open={openBasic}>
-          <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
+          <MDBNavbarNav className='text-light mr-auto mb-0 mb-lg-0'>
             <MDBNavbarItem>
               <MDBNavbarLink active aria-current='page' href='#'>
                 Home
