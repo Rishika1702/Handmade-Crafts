@@ -44,10 +44,11 @@ const page = () => {
       </MDBContainer>
       
       {/* products */}
-      
+      <div className='bg-primary-suttle'>
       <div className="d-flex justify-content-center">
        <div className="p-2">Flex item 1</div>
         <div className="p-2">Flex item 2</div>
+      </div>
       </div>
       
       {/* footer */}
