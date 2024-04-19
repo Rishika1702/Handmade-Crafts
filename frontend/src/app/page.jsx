@@ -13,7 +13,7 @@ const page = () => {
       <header>
         <MDBCarousel showIndicators showControls fade>
           <MDBCarouselItem itemId={1} style={{ height: 500 }}>
-            <img src='https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg' className='d-block w-100' alt='...' />
+            <img src='https://i.pinimg.com/564x/84/03/9a/84039a5db21ba638384cf2dfe7551286.jpg' className='d-block w-100' alt='...' />
             <MDBCarouselCaption>
               <h5>First slide label</h5>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -21,7 +21,7 @@ const page = () => {
           </MDBCarouselItem>
 
           <MDBCarouselItem itemId={2} style={{ height: 500 }}>
-            <img src='https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg' className='d-block w-100' alt='...' />
+            <img src='https://i.pinimg.com/564x/d2/2f/9e/d22f9e900915f33d87e530160081e04e.jpg' className='d-block w-100' alt='...' />
             <MDBCarouselCaption>
               <h5>Second slide label</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -29,7 +29,7 @@ const page = () => {
           </MDBCarouselItem>
 
           <MDBCarouselItem itemId={3} style={{ height: 500 }}>
-            <img src='https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg' className='d-block w-100' alt='...' />
+            <img src='https://the-socialites-closet.com/wp-content/uploads/2022/03/care-for-wool.jpg' className='d-block w-100' alt='...' />
             <MDBCarouselCaption>
               <h5>Third slide label</h5>
               <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
