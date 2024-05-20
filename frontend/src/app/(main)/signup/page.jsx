@@ -4,9 +4,13 @@ import Link from 'next/link';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import toast from 'react-hot-toast';
+import { useRouter } from 'next/navigation';
 
 
 const Signup = () => {
+
+  const router = useRouter();
+
   const SignupValidationSchema = Yup.object().shape({
     name: Yup.string().min(2, 'Too Short!').max(50, 'Too Long!').required('Required'),
     email: Yup.string().email('Invalid email').required('Required'),
@@ -40,6 +44,7 @@ const Signup = () => {
           console.log(response.status);
           if (response.status === 200) {
             toast.success('user registered successfully')
+            router.push("/login")
           }
           else {
             toast.error('user registration failed')

@@ -5,7 +5,7 @@ const mySchema = new Schema({
     category: String,
     material: String,
     price: { type: Number },
-    image: { type: String },
+    image: {type:String },
     description: String,
     createdAt: { type: Date, default: Date.now }
 });

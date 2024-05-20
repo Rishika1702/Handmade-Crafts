@@ -3,26 +3,56 @@ import React from 'react';
 import Link from 'next/link';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { useRouter } from 'next/navigation';
+import toast from 'react-hot-toast';
 
 
 const Login = () => {
-  const loginValidationSchema = Yup.object().shape({
-    email: Yup.string().email('Enter valid email').required('Enter email '),
-    password: Yup.string().required('Password required')
-  });
 
-
+  const router = useRouter();
+ 
   const loginForm = useFormik({
     initialValues: {
+      
       email: '',
       password: ''
+     
     },
     onSubmit: (values) => {
       console.log(values);
       // send data to backend
+
+
+
+      //sending request to client
+      fetch('http://localhost:5000/user/authenticate', {
+        method: 'POST',
+        body: JSON.stringify(values),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+        .then((response) => {
+          console.log(response.status);
+          if (response.status === 200) {
+            toast.success('user loggIn successfully')
+            router.push("/addProduct")
+          }
+          else {
+            toast.error('user registration failed')
+          }
+        }).catch((err) => {
+          console.log(err);
+          toast.error('user registration failed')
+        })
     },
-    validationSchema: loginValidationSchema
+
+
+    
   });
+
+
+  
 
   return (
     <div className='vh-100 bg-primary-subtle d-flex align-items-center'>

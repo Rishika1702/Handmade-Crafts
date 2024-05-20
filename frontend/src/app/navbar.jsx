@@ -16,12 +16,13 @@ import {
   MDBDropdownItem,
   MDBCollapse,
 } from 'mdb-react-ui-kit';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [openBasic, setOpenBasic] = useState(false);
 
   return (
-    <MDBNavbar className='text-white' expand='lg' light bgColor='primary-subtle' >
+    <MDBNavbar className='text-white' expand='lg' light bgColor='primary' >
       <MDBContainer fluid>
         <MDBNavbarBrand href='#'>
           <img src="Logo3.png" 
@@ -70,10 +71,16 @@ export default function Navbar() {
             </MDBNavbarItem>
           </MDBNavbarNav>
 
-          <form className='d-flex input-group w-auto'>
-            <input type='search' className='form-control' placeholder='Type query' aria-label='Search' />
-            <MDBBtn color='primary'>Search</MDBBtn>
-          </form>
+          <div className='d-flex me-3 input-group w-auto'>
+            {/* <input type='search' className='form-control' placeholder='Type query' aria-label='Search' /> */}
+            <Link href={"/signup"} type='button' className='btn btn-primary' >Signup</Link>
+            
+          </div>
+          <div className='d-flex me-3 input-group w-auto'>
+            {/* <input type='search' className='form-control' placeholder='Type query' aria-label='Search' /> */}
+            <Link href={"/login"} type='button' className='btn btn-primary' >Login</Link>
+            
+          </div>
         </MDBCollapse>
       </MDBContainer>
     </MDBNavbar>

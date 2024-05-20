@@ -1,15 +1,87 @@
 "use client"
-import React, { useState } from 'react';
-import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
+import React, { useEffect, useState } from 'react';
+import { MDBFooter, MDBRow, MDBCol } from 'mdb-react-ui-kit';
+import {
+  MDBNavbar,
+  MDBNavbarNav,
+  MDBNavbarItem,
+  MDBNavbarLink,
+  MDBNavbarToggler,
+  MDBContainer,
+  MDBIcon,
+  MDBCollapse
+} from 'mdb-react-ui-kit';
+import {
+  MDBCard,
+  MDBCardBody,
+  MDBCardTitle,
+  MDBCardText,
+  MDBCardImage,
+  MDBBtn
+} from 'mdb-react-ui-kit';
 
 
-const browse = () => {
+const Browse = () => {
+
+  const [productList, setProductList] = useState([]);
+
+  const fetchProducts = () => {
+    fetch('http://localhost:5000/product/getall')
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setProductList(data);
+        console.log(data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
+  useEffect(() => {
+    fetchProducts();
+  }, [])
+
+  const displayProducts = () => {
+    return productList.map(product => (
+      <div className="col-md-4">
+        <MDBCard>
+          <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/184.webp' position='top' alt='...' />
+          <MDBCardBody>
+            <MDBCardText className='text-muted m-0'>
+              {product.category}
+            </MDBCardText>
+            <MDBCardTitle>{product.name}</MDBCardTitle>
+            <MDBCardText>
+              Some quick example text to build on the card title and make up the bulk of the card's content.
+            </MDBCardText>
+            <MDBBtn href='#'>Button</MDBBtn>
+          </MDBCardBody>
+        </MDBCard>
+      </div>
+    ))
+  }
+
+
   return (
     <div>
-        <header>
-            
-        </header>
-     {/* footer
+      <h1>Browse</h1>
+      <div className="container">
+        <div className='d-flex justify-content-center'>
+          <form className='d-flex pt-5 pb-5 input-group w-75'>
+            <input type='search' className='form-control' placeholder='Type query' aria-label='Search' />
+            <MDBBtn color='primary'>Search</MDBBtn>
+          </form>
+        </div>
+        <div className="row pt-4 gx-3 gy-5">
+          {displayProducts()}
+        </div>
+      </div>
+
+
+
+      {/* footer
      <MDBFooter bgColor='info-subtle' className='text-center text-lg-start text-muted'>
       <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
         <div className='me-5 d-none d-lg-block'>
@@ -132,4 +204,4 @@ const browse = () => {
   )
 }
 
-export default browse
+export default Browse
