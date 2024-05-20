@@ -11,28 +11,35 @@ const page = () => {
     <div>
       <Navbar/>
       <header>
-        <MDBCarousel showIndicators showControls fade>
+        <MDBCarousel  showControls fade>
           <MDBCarouselItem itemId={1} style={{ height: 500 }}>
-            <img src='https://i.pinimg.com/564x/84/03/9a/84039a5db21ba638384cf2dfe7551286.jpg' className='d-block w-100' alt='...' />
-            <MDBCarouselCaption>
-              <h5>First slide label</h5>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <img src='First.png' className='d-block w-100' alt='...' />
+            <MDBCarouselCaption >
+            <div className="badge bg-primary-subtle fw-bolder text-black" style={{width: "15rem"}}>
+            <h5>Wide variety of cloths</h5>
+              <p>Style the way you want</p>
+              </div>
+              
             </MDBCarouselCaption>
           </MDBCarouselItem>
 
           <MDBCarouselItem itemId={2} style={{ height: 500 }}>
-            <img src='https://i.pinimg.com/564x/d2/2f/9e/d22f9e900915f33d87e530160081e04e.jpg' className='d-block w-100' alt='...' />
+            <img src='Second.png' className='d-block w-100' alt='...' />
             <MDBCarouselCaption>
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div className="badge bg-primary-subtle fw-bolder text-black" style={{width: "18rem"}}>
+            <h5>Wide variety of Accessories</h5>
+              <p>Style the way you want</p>
+              </div>
             </MDBCarouselCaption>
           </MDBCarouselItem>
 
           <MDBCarouselItem itemId={3} style={{ height: 500 }}>
-            <img src='https://the-socialites-closet.com/wp-content/uploads/2022/03/care-for-wool.jpg' className='d-block w-100' alt='...' />
+            <img src='Third.png' className='d-block w-100' alt='...' />
             <MDBCarouselCaption>
-              <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <div className="badge bg-primary-subtle fw-bolder text-black" style={{width: "21rem"}}>
+            <h5>Wide variety of Decorative Items</h5>
+              <p>Style your home</p>
+              </div>
             </MDBCarouselCaption>
           </MDBCarouselItem>
         </MDBCarousel>
