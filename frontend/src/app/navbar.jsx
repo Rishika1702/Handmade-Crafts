@@ -22,7 +22,7 @@ export default function Navbar() {
   const [openBasic, setOpenBasic] = useState(false);
 
   return (
-    <MDBNavbar className='text-white' expand='lg' light bgColor='primary' >
+    <MDBNavbar className='text-white' expand='lg' light bgColor='primary-subtle' >
       <MDBContainer fluid>
         <MDBNavbarBrand href='#'>
           <img src="Logo3.png" 

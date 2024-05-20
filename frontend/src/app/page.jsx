@@ -8,7 +8,7 @@ import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-k
 const page = () => {
   const [showBasic, setShowBasic] = useState(false);
   return (
-    <div className='bg-primary-subtle'>
+    <div className='bg-white'>
       <header>
         <MDBCarousel  showControls fade>
           <MDBCarouselItem itemId={1} style={{ height: 500 }}>
@@ -45,17 +45,14 @@ const page = () => {
       </header>
       <MDBContainer>
         <div className="text-center p-5" style={{ width: "100" }}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, aperiam quo maiores odit molestiae iste fugiat, iusto porro nisi assumenda esse nostrum dicta ullam praesentium inventore animi aliquid? Illo asperiores autem deserunt ab facilis eaque id eius optio ut qui animi voluptatem facere atque, culpa molestiae quia voluptatibus consectetur vero.
+        Mishrit is a passion-driven knitting business that specializes in creating and selling exquisite handmade knitting crafts. Founded by lifelong knitting enthusiast Jane Doe, Mishrit aims to bring warmth and creativity into your life through unique, high-quality knitwear and accessories. In addition to offering a wide range of handcrafted items, we are dedicated to sharing the art of knitting with others through our comprehensive learning resources and workshops.
+
+
         </div>
       </MDBContainer>
       
       {/* products */}
-      <div className='bg-primary-suttle'>
-      <div className="d-flex justify-content-center">
-       <div className="p-2">Flex item 1</div>
-        <div className="p-2">Flex item 2</div>
-      </div>
-      </div>
+      
       
       {/* footer */}
       <MDBFooter bgColor='primary' className='text-center text-lg-start text-light'>
