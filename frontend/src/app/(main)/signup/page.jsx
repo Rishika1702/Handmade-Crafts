@@ -60,7 +60,7 @@ const Signup = () => {
   });
 
   return (
-    <div className='bg-info-subtle d-flex align-items-center'>
+    <div className='bg-primary-subtle d-flex align-items-center'>
       <section className="container">
         <div
           className="px-4 py-5 px-md-5 text-center text-lg-start"

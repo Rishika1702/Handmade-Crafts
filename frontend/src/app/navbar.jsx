@@ -48,26 +48,23 @@ export default function Navbar() {
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href='#'>Link</MDBNavbarLink>
+              <MDBNavbarLink href='#'>Join us</MDBNavbarLink>
             </MDBNavbarItem>
 
             <MDBNavbarItem>
               <MDBDropdown>
                 <MDBDropdownToggle tag='a' className='nav-link' role='button'>
-                  Dropdown
+                  Categories
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
-                  <MDBDropdownItem link>Action</MDBDropdownItem>
-                  <MDBDropdownItem link>Another action</MDBDropdownItem>
-                  <MDBDropdownItem link>Something else here</MDBDropdownItem>
+                  <MDBDropdownItem link>Head Gear</MDBDropdownItem>
+                  <MDBDropdownItem link>Handbags</MDBDropdownItem>
+                  <MDBDropdownItem link>Shawls</MDBDropdownItem>
+                  <MDBDropdownItem link>Accessories</MDBDropdownItem>
+                  <MDBDropdownItem link>Decorative Items</MDBDropdownItem>
+                  <MDBDropdownItem link>Gifts</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
-            </MDBNavbarItem>
-
-            <MDBNavbarItem>
-              <MDBNavbarLink disabled href='#' tabIndex={-1} aria-disabled='true'>
-                Disabled
-              </MDBNavbarLink>
             </MDBNavbarItem>
           </MDBNavbarNav>
 
