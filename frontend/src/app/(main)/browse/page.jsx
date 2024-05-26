@@ -65,8 +65,8 @@ const Browse = () => {
 
 
   return (
-    <div>
-      <h1>Browse</h1>
+    <div className='bg-primary-subtle'>
+      <h1 className='text-center'>Browse</h1>
       <div className="container">
         <div className='d-flex justify-content-center'>
           <form className='d-flex pt-5 pb-5 input-group w-75'>
