@@ -1,0 +1,6 @@
+![Screenshot 2024-05-26 171759](https://github.com/Rishika1702/Handmade-Crafts/assets/87077997/d3e815c4-b8d8-45be-8131-3a6d413dfc01)
+![Screenshot 2024-05-26 171822](https://github.com/Rishika1702/Handmade-Crafts/assets/87077997/c851f632-0c7b-4684-b7bb-48af2d0d674d)
+![Screenshot 2024-05-26 171848](https://github.com/Rishika1702/Handmade-Crafts/assets/87077997/93400f64-6998-4ae8-a0f9-f7b4e0b2ecfc)
+![Screenshot 2024-05-26 171923](https://github.com/Rishika1702/Handmade-Crafts/assets/87077997/94ac5812-ae2c-4f90-8e60-737d1ffc48d4)
+![Screenshot 2024-05-26 172152](https://github.com/Rishika1702/Handmade-Crafts/assets/87077997/64a925a3-c4fc-44ba-8579-f6170e9057f1)
+![Screenshot 2024-05-26 172118](https://github.com/Rishika1702/Handmade-Crafts/assets/87077997/8cdd77e0-e1c8-423b-9f98-6c96fdfa9a6c)
